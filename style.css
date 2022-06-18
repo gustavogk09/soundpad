@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    font-family: 'Space Mono', monospace;
+}
+
+body {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+    transition: 0.25s;
+    background: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #1c1c1c;
+    background-color: #5f35fd;
+    background-image: linear-gradient(43deg, #202020 0%, #181818a6 46%, #202020 100%);
+
+}
+
+.container {
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: 175px 175px 175px 175px;
+    grid-template-columns: 175px 175px 175px 175px;
+
+
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+button {
+    display: flex;
+    background-color: #1c1c1c;;
+    
+    color: aliceblue;
+    border-radius: 18px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: auto;
+    transition: 0.25s;
+    border: none;
+}
+
+button:hover {
+    transition: 0.25s;
+    animation: linear;
+    background-color: rgb(164, 67, 255);
+    border: 3px solid aliceblue;
+    font-size: 70px;
+}
+
+span {
+    font-size: 60px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+span:hover {
+    font-size: 70px;
+    transition: 0.25s;
+}
+
+p {
+    align-items: center;
+}
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 425px) {
+    .body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        transition: 0.25s;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .container {
+        display: grid;
+        columns: auto;
+        grid-template-rows: 175px 175px 175px 175px;
+        grid-template-columns: 175px 175px ;
+    
+    
+        margin-top: 30px;
+        text-align: center;
+        justify-content: center;
+        transition: 0.25s;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .container {
+        display: grid;
+        columns: auto;
+        grid-template-rows: 175px 175px 175px 175px;
+        grid-template-columns: 175px 175px ;
+    
+    
+        margin-top: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+        justify-content: center;
+        transition: 0.25s;
+    }
+  }
